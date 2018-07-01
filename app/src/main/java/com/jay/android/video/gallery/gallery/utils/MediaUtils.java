@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 
+import com.jay.android.video.gallery.gallery.activity.VideoGalleryActivity;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -21,12 +23,13 @@ public final class MediaUtils {
 
     private MediaUtils() {}
 
-    public static Uri getOutputMediaFileUri() {
-        return Uri.fromFile(getOutputMediaFile());
+    public static Uri getOutputMediaFileUri(Context context) {
+        return Uri.fromFile(getOutputMediaFile(context));
     }
 
-    public static File getOutputMediaFile() {
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES), "camera");
+    public static File getOutputMediaFile(Context context) {
+//        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES), "camera");
+        File mediaStorageDir = new File(context.getExternalCacheDir(),"DIRECTORY_MOVIES");
 
         createMediaStorageDir(mediaStorageDir);
 

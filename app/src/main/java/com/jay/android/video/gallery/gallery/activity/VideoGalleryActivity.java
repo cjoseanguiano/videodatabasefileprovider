@@ -116,7 +116,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
 
     private void recordVideo() {
         // file:///storage/emulated/0/Movies/camera/Video_20161221_140831.mp4
-        videoStoragePathUri = MediaUtils.getOutputMediaFileUri();
+        videoStoragePathUri = MediaUtils.getOutputMediaFileUri(this);
 
         Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
         // Ensure that there's a camera activity to handle the intent
