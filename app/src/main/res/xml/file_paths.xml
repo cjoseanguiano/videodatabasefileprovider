@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path path="." name="files_root" />
+    <external-path path="." name="Android/data/com.jay.android.video.gallery.gallery/files" />
+</paths>
+
+
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
+<paths>
+<files-path
+    name="my_images"
+    path="Android/data/com.jay.android.video.gallery.gallery/files/Pictures" />
+<external-path
+    name="external_paths"
+    path="." />
+<external-files-path
+    name="my_images"
+    path="." />
+
+</paths>-->
